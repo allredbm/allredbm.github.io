@@ -1,0 +1,56 @@
+/*Color scheme:
+  #B2B09B (beige)
+  #43AA8B (sea blue)
+  #254441 (darker green)
+  #F6F59 (orange)
+  #DB5O4A (orange red) */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #B2B09B;
+	font: 16px Georgia, sans-serif;
+	color: #254441;
+}
+
+div {
+	margin-right: auto;
+	margin-left: auto;
+	width: 6em;
+}
+
+.title {
+	font-size: 25px;
+	background-color: orange;
+	margin-top: 10px;
+	display: block;
+	width: 600px;
+	height: 125px;
+	padding-top: 15px;
+	padding-left: 15px;
+
+	border-radius: 25px;
+}
+
+.info {
+	background-color: #DB504A;
+	border-radius: 25px;
+	padding: 25px;
+	width: 550px;
+	margin-top: 20px;
+}
+
+.contact {
+	background-color: #43AA8B;
+	padding: 25px;
+	border-radius: 25px;
+	width: 550px;
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 1.5em;
+}
