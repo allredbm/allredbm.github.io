@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	background-color: #E5F4E3;
+	background-color: #5DA9E9;
 	font: 16px Georgia, sans-serif;
 	color: #003F91;
 }
@@ -30,7 +30,7 @@ div {
 	width: 6em;
 }
 
-/*.title {
+.title {
 	font-size: 25px;
 	background-color: orange;
 	margin-top: 10px;
@@ -44,7 +44,7 @@ div {
 }
 
 .info {
-	background-color: #DB504A;
+	background-color: #6D326D;
 	border-radius: 25px;
 	padding: 25px;
 	width: 550px;
@@ -52,13 +52,13 @@ div {
 }
 
 .contact {
-	background-color: #43AA8B;
+	background-color: #FFFFFF;
 	padding: 25px;
 	border-radius: 25px;
 	width: 550px;
 	margin-top: 20px;
 }
-*/
+
 h2 {
 	font-size: 1.5em;
 }
