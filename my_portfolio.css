@@ -30,17 +30,8 @@ div {
 	width: 6em;
 }
 
-.title {
-	font-size: 25px;
-	background-color: orange;
-	margin-top: 10px;
-	display: block;
-	width: 600px;
-	height: 125px;
-	padding-top: 15px;
-	padding-left: 15px;
-
-	border-radius: 25px;
+.jumbotron {
+	width: 550px;
 }
 
 .info {
