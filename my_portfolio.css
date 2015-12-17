@@ -24,19 +24,17 @@ body {
 	color: #003F91;
 }
 
-div {
+.jumbotron {
 	margin-right: auto;
 	margin-left: auto;
-	width: 6em;
-}
-
-.jumbotron {
 	width: 700px;
 	border-radius: 25px;
 	padding: 25px;
 }
 
 .info {
+	margin-right: auto;
+	margin-left: auto;
 	background-color: #6D326D;
 	color: #FFFFFF;
 	border-radius: 25px;
@@ -46,6 +44,8 @@ div {
 }
 
 .contact {
+	margin-right: auto;
+	margin-left: auto;
 	background-color: #FFFFFF;
 	padding: 25px;
 	border-radius: 25px;
