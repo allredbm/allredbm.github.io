@@ -24,6 +24,12 @@ body {
 	color: #003F91;
 }
 
+h2 {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 1.5em;
+}
+
 .jumbotron {
 	margin-right: auto;
 	margin-left: auto;
@@ -51,8 +57,4 @@ body {
 	border-radius: 25px;
 	width: 550px;
 	margin-top: 20px;
-}
-
-h2 {
-	font-size: 1.5em;
 }
