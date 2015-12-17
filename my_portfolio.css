@@ -3,7 +3,15 @@
   #43AA8B (sea blue)
   #254441 (darker green)
   #F6F59 (orange)
-  #DB5O4A (orange red) */
+  #DB5O4A (orange red) 
+
+Alternative Color scheme:
+  #E5F4E3 (off-white)
+  #5DA9E9 (sky blue)
+  #003F91 (deep blue)
+  #FFFFFF (white)
+  #6D326D (purple);
+  */
 
 html {
 	margin: 0;
@@ -13,16 +21,16 @@ html {
 body {
 	background-color: #B2B09B;
 	font: 16px Georgia, sans-serif;
-	color: #254441;
+	color: #E5F4E3;
 }
 
-/*div {
+div {
 	margin-right: auto;
 	margin-left: auto;
 	width: 6em;
 }
 
-.title {
+/*.title {
 	font-size: 25px;
 	background-color: orange;
 	margin-top: 10px;
