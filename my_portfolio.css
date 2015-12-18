@@ -66,6 +66,10 @@ img {
 	margin-left: auto;
 }
 
+.infol p, .infor p {
+	text-align: center;
+}
+
 .contact {
 	margin-right: auto;
 	margin-left: auto;
