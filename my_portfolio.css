@@ -49,25 +49,15 @@ img {
 	padding: 25px;
 }
 
-.infol, .infor {
+.info {
+	margin-left: auto;
+	margin-right: auto;
 	background-color: #6D326D;
 	color: #FFFFFF;
 	border-radius: 25px;
 	padding: 25px;
 	width: 550px;
 	margin-top: 20px;
-}
-
-.infol {
-	margin-right: auto;
-}
-
-.infor {
-	margin-left: auto;
-}
-
-.infol p, .infor p {
-	text-align: center;
 }
 
 .contact {
