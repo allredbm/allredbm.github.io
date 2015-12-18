@@ -25,22 +25,22 @@ body {
 }
 
 h1 {
-	margin-right: auto;
-	margin-left: auto;
+	text-align: center;
 	font-size: 3em;
 }
 
 h2 {
-	margin-right: auto;
-	margin-left: auto;
+	text-align: center;
 	font-size: 1.5em;
 }
 
 img {
 	margin-right: auto;
 	margin-left: auto;
+	width: 6em;
 	margin-bottom: 20px;
 }
+
 .jumbotron {
 	margin-right: auto;
 	margin-left: auto;
