@@ -62,13 +62,6 @@ img {
     margin-left: auto;
 }
 
-.portrait {
-	border-radius: 50%;
-	vertical-align: middle;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 .info {
 	margin-left: auto;
 	margin-right: auto;
@@ -89,3 +82,11 @@ img {
 	width: 550px;
 	margin-top: 20px;
 }
+
+#portrait {
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;
+}
+
