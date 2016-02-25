@@ -65,7 +65,8 @@ img {
 .portrait {
 	border-radius: 50%;
 	vertical-align: middle;
-	border: 0;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .info {
