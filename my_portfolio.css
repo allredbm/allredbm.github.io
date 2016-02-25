@@ -8,7 +8,7 @@
 Alternative Color scheme:
   #E5F4E3 (off-white)
   #5DA9E9 (sky blue)
-  #003F91 (deep blue)
+  003F91# (deep blue)
   #FFFFFF (white)
   #6D326D (purple);
   */
@@ -50,11 +50,12 @@ img {
 }
 
 .jumbotron {
-	margin-right: auto;
-	margin-left: auto;
-	width: 700px;
-	border-radius: 25px;
-	padding: 25px;
+	background-image: url("assets/dark-blue-sky.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 10%;
 }
 
 .info {
