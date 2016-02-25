@@ -95,8 +95,7 @@ img {
 #portrait {
 	border-radius: 50%;
 	vertical-align: middle;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	padding: 10px;
 }
 
