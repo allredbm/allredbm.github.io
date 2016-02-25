@@ -61,14 +61,6 @@ img {
     margin: 0 auto;
 }
 
-.portrait {
-	border-radius: 50%;
-	vertical-align: middle;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 10px;
-}
-
 .intro {
 	margin-left: auto;
 	margin-right: auto;
@@ -100,4 +92,11 @@ img {
 	margin-top: 20px;
 }
 
+#portrait {
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
 
