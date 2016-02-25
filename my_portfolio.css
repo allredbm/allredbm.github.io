@@ -55,18 +55,18 @@ img {
 	padding: 10%;
 }
 
-/*.container {
+.container {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-}*/
+}
 
-.portrait {
+/*.portrait {
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-right: auto;
 	margin-left: auto;
-}
+}*/
 
 .info {
 	margin-left: auto;
