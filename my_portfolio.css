@@ -61,12 +61,13 @@ img {
     margin: 0 auto;
 }
 
-/*.portrait {
+.portrait {
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-right: auto;
 	margin-left: auto;
-}*/
+	padding: 10px;
+}
 
 .intro {
 	margin-left: auto;
