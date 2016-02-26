@@ -44,7 +44,6 @@ h2 {
 
 img {
 	border: 0;
-	margin: 0 auto;
 }
 
 .jumbotron {
@@ -97,6 +96,7 @@ img {
 	border-radius: 50%;
 	vertical-align: middle;
 	padding: 10px;
-	width: 350px;
+	width: 300px;
+	margin: 0 auto;
 }
 
