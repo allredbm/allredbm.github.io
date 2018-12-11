@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ben Allred, Web Developer</title>
+	<title>Ben Allred, Application Developer</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -11,7 +11,7 @@
 </head>
 <body>
 	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -21,25 +21,40 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Ben Allred</a>
+	      <a class="navbar-brand" href="#">
+	      	<img id="logo" src="assets/Ben_Allred_logo.png">
+	      </a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	      	<li><a href="#intro">About Me<span class="sr-only">(current)</span></a></li>
-	        <li><a href="#skills">Skills<span class="sr-only">(current)</span></a></li>
-	        <li><a href="#projects">Projects</a></li>
+	      <ul class="nav navbar-nav pull-right">
+	      	<li><a href="#about">About Me<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#works">Works</a></li>
+	        <li><a href="#experience">Experience</a></li>
 	        <li><a href="#schools">Schools</a></li>
-	        <li><a href="assets/Resume.pdf">Resume</a></li>
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resume<span class="caret"></span></a>
+	        	<ul class="dropdown-menu dropdown-menu-right">
+	        		<li><a href="assets/Ben_Allred_Resume.pdf">PDF</a></li>
+	        		<li><a href="assets/Ben_Allred_Resume.docx">Microsoft Word</a></li>
+	        	</ul>
+	        </li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Me<span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Email: allredbm@yahoo.com</a></li>
-	            <li><a href="https://www.linkedin.com/profile/view?id=AAMAABJWLfMBejY4BaaqmEflHZ3_W2Dl68lY5gg&trk=hp-identity-name">LinkedIn</a></li>
-	            <li><a href="https://github.com/allredbm">Github</a></li>
+	          <ul class="dropdown-menu dropdown-menu-right">
+	            <li><div class="contact-link">
+	            	<img src="assets/mail-black-envelope-symbol.png">
+	            	<a href="#">Email: allredbm@yahoo.com</a>
+	            </div></li>
+	            <li><div class="contact-link">
+	            	<img src="assets/linked-in-logo.png">
+	            	<a href="https://www.linkedin.com/profile/view?id=AAMAABJWLfMBejY4BaaqmEflHZ3_W2Dl68lY5gg&trk=hp-identity-name">LinkedIn</a>
+	            </div></li>
+	            <li><div class="contact-link">
+	            	<img src="assets/github-logo.png">
+	            	<a href="https://github.com/allredbm">Github</a>
+	            </div></li>
 	          </ul>
 	        </li>
 	      </ul>
@@ -47,164 +62,158 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<div class="jumbotron">
-		<div class="container">
-			<center>
-				<img id="logo" src="assets/Drawing.png" alt="jumbotron image" height="50%" width="50%" >
-			</center>
-		</div>
-	</div>
-	
-	<h1>About Me</h1>
+	<section id="about">
+		<div class="section">
+			<div class="col-md-6">
+				<h1>About</h1>
 
-	<section id="intro">
-		<div class="intro">
-			<center>
-				<img id="portrait" src="assets/ben_allred.jpg" alt="Ben Allred" class="img-circle" height="400px" width="400">
-			</center>
-			<p id="">I'm an application developer with two years of experience developing and improving web applications. I'm currently living in Charlotte, North Carolina and I'm aiming to continue applying and improving my skills in the field of application development. This site contains information about myself, as well as some of the projects I have made.</p>
+				<p>I'm an application developer with two years of experience developing and improving web applications. I'm currently living in Charlotte, North Carolina and I'm aiming to continue applying and improving my skills in the field of application development. This site contains information about myself, as well as some of the projects I have made.</p>
 
-			<p>I am currently available for hire. If you are interested in hiring me or have more questions, please feel free to <a href="#contact">contact me</a>.</p>
+				<p>I am currently available for hire. If you are interested in hiring me or have more questions, please feel free to <a href="#contact">contact me</a>.</p>
+			</div>
+			<div class="col-md-6">
+				<img id="portrait" src="assets/ben_allred.jpg" alt="Ben Allred" height="400px">
+			</div>
 		</div>	
 	</section>
 
-	<section id="skills">
-		<h2>Technical Skills:</h2>
+	<section id="works">
+		<div class="section-alt">
+			<div class="col-md-6">
+				<h1>Works</h1>
+			</div>
+			<div class="col-md-6">
+				<div id="scraper">
+					<h3>Kohler Scraper</h3>
+					<p>This project is a web scraper that I was asked to write for Specbooks.com. When run, the scraper is designed to iterate through the Kohler.com product catalog and scrape the product information and any documentation for each product. This information is then converted into a csv document and exported, so that it can be used for other purposes.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/Kohler-Scraper">Kohler Scraper</a></p>
+				</div>
 
-		<div class="info">
-			<ul>
-				<li>Languages: PHP, JavaScript, SQL, SOQL, Ruby, jQuery, Python, C#</li>
-				<li>Operating Systems: Windows, OS X</li>
-				<li>Web Development: HTML (including HTML5), JavaScript, CSS, AngularJS, Angular UI Bootstrap, Angular UI Grid, Angular 5</li>
-				<li>Database: PostgresSQL, MySQL</li>
-				<li>Development Tools: Sublime Text, Xcode, Visual Studio</li>
-				<li>Unit Testing: Grunt, Jasmine, PHPUnit</li>
-				<li>Version Control: Git</li>
-				<li>Experience with agile development methodologies</li>
-				<li>ITIL Certified</li>
-			</ul>
-		</div>
-	</section>
+				<div id="quiz">
+					<h3><a href="http://allredbm.github.io/HTML_quiz/">HTML Quiz</a></h3>
+					<p>This page is an interactive quiz on HTML5's features. The site keeps track of which answers are right and wrong and gives you a total score after the last question is submitted.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/HTML_quiz">HTML_Quiz</a></p>
+				</div>
 
-	<section id="projects">
-		<h2>My Projects</h2>
+				<div id="stickys">
+					<h3><a href="http://allredbm.github.io/Stickys/">Stickys</a></h3>
+					<p>This project is a webpage where a user can create and edit sticky notes that will remain on the page. These notes are stored on an in-browser database and will remain when the page is refreshed.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/Stickys">Stickys</a></p>
+				</div>
 
-		<div id="scraper" class="info">
-			<h3>Kohler Scraper</h3>
-			<p>This project is a web scraper that I was asked to write for Specbooks.com. When run, the scraper is designed to iterate through the Kohler.com product catalog and scrape the product information and any documentation for each product. This information is then converted into a csv document and exported, so that it can be used for other purposes.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/Kohler-Scraper">Kohler Scraper</a></p>
-		</div>
+				<div id="snake">
+					<h3><a href="http://allredbm.github.io/Snake/">Snake</a></h3>
+					<p>This project is a version of the Snake game coded into the frontend of the webpage. The snake can be controlled with the arrow keys.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/Snake">Snake</a></p>
+				</div>
 
-		<div id="quiz" class="info">
-			<h3><a href="http://allredbm.github.io/HTML_quiz/">HTML Quiz</a></h3>
-			<p>This page is an interactive quiz on HTML5's features. The site keeps track of which answers are right and wrong and gives you a total score after the last question is submitted.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/HTML_quiz">HTML_Quiz</a></p>
-		</div>
+				<div id="gallery">
+					<h3><a href="http://allredbm.github.io/Photo_Gallery/">Photo Gallery</a></h3>
+					<p>This project is an animated photo gallery. It uses javascript to sort the photos by tags and uses Fancybox to display the image on click.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/Photo_Gallery">Photo_Gallery</a></p>
+				</div>
 
-		<div id="stickys" class="info">
-			<h3><a href="http://allredbm.github.io/Stickys/">Stickys</a></h3>
-			<p>This project is a webpage where a user can create and edit sticky notes that will remain on the page. These notes are stored on an in-browser database and will remain when the page is refreshed.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/Stickys">Stickys</a></p>
-		</div>
+				<div id="techedge">
+					<h3><a href="http://allredbm.github.io/TechEdge/">The TechEdge</a></h3>
+					<p>The TechEdge is a frontend mockup for a tech blog.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/tts-weather-app">TechEdge</a></p>
+				</div>
 
-		<div id="snake" class="info">
-			<h3><a href="http://allredbm.github.io/Snake/">Snake</a></h3>
-			<p>This project is a version of the Snake game coded into the frontend of the webpage. The snake can be controlled with the arrow keys.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/Snake">Snake</a></p>
-		</div>
+				<div id="Weather">
+					<h3><a href="https://weather-app-demo.herokuapp.com/">Weather App</a></h3>
+					<p>This weather app was an exercise for Tech Talent South meant to teach API integration in a rails app. The website uses the WUnderground API to take a city as an input and display the current weather in that city. The site also includes a link to a more detailed forecast and a background that changes based on the weather being displayed.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/tts-weather-app">tts-weather-app</a></p>
+				</div>
 
-		<div id="gallery" class="info">
-			<h3><a href="http://allredbm.github.io/Photo_Gallery/">Photo Gallery</a></h3>
-			<p>This project is an animated photo gallery. It uses javascript to sort the photos by tags and uses Fancybox to display the image on click.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/Photo_Gallery">Photo_Gallery</a></p>
-		</div>
+				<div id="Coffee">
+					<h3><a href="http://allredbm.github.io/tts-good-coffee/">Good Coffee Co.</a></h3>
+					<p>Good Coffee Co. was an exercise for Tech Talent South. It is a mockup website for a fictional coffee shop and is designed to advertise for the shop and communicate the shop's values.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/tts-good-coffee">tts-good-coffee</a></p>
+				</div>
 
-		<div id="techedge" class="info">
-			<h3><a href="http://allredbm.github.io/TechEdge/">The TechEdge</a></h3>
-			<p>The TechEdge is a frontend mockup for a tech blog.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/tts-weather-app">TechEdge</a></p>
-		</div>
+				<div id="travel">
+					<h3><a href="http://tts-travel.herokuapp.com/">TTS-Travel</a></h3>
+					<p>This was a project for Tech Talent South. It is a rudimentary site that uses the Google Maps API. The project was meant to teach API usage, as well as how to make custom icons for Google Maps.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/tts-travel">tts-travel</a></p>
+				</div>
 
-		<div id="Weather" class="info">
-			<h3><a href="https://weather-app-demo.herokuapp.com/">Weather App</a></h3>
-			<p>This weather app was an exercise for Tech Talent South meant to teach API integration in a rails app. The website uses the WUnderground API to take a city as an input and display the current weather in that city. The site also includes a link to a more detailed forecast and a background that changes based on the weather being displayed.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/tts-weather-app">tts-weather-app</a></p>
-		</div>
-
-		<div id="Coffee" class="info">
-			<h3><a href="http://allredbm.github.io/tts-good-coffee/">Good Coffee Co.</a></h3>
-			<p>Good Coffee Co. was an exercise for Tech Talent South. It is a mockup website for a fictional coffee shop and is designed to advertise for the shop and communicate the shop's values.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/tts-good-coffee">tts-good-coffee</a></p>
-		</div>
-
-		<div id="travel" class="info">
-			<h3><a href="http://tts-travel.herokuapp.com/">TTS-Travel</a></h3>
-			<p>This was a project for Tech Talent South. It is a rudimentary site that uses the Google Maps API. The project was meant to teach API usage, as well as how to make custom icons for Google Maps.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/tts-travel">tts-travel</a></p>
-		</div>
-
-		<div id="tweeter" class="info">
-			<h3><a href="http://tts-tweeter.herokuapp.com/">Tweeter</a></h3>
-			<p>This was a project for Tech Talent South. The intent was to design a website that replicated the features of Twitter. Users create an account with Devise and can then create short messages that are posted to a communal wall.</p>
-			<p>Github repo: <a href="https://github.com/allredbm/tts-tweeter">tts-tweeter</a></p>
+				<div id="tweeter">
+					<h3><a href="http://tts-tweeter.herokuapp.com/">Tweeter</a></h3>
+					<p>This was a project for Tech Talent South. The intent was to design a website that replicated the features of Twitter. Users create an account with Devise and can then create short messages that are posted to a communal wall.</p>
+					<p>Github repo: <a href="https://github.com/allredbm/tts-tweeter">tts-tweeter</a></p>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<section id="experience">
-		<h2>Experience</h2>
-		
-		<div class="info">
-			<h3>
-				<a href="https://specbooks.com/">Specbooks</a>
-				<em>Charlotte, NC</em>
-			</h3>
-			<p>While working at Specbooks, I was a part of a small team responsible for updating legacy code for the Specbooks website, including front-end changes and back-end components. While on this team, I was tasked with writing numerous web scrapers to more quickly and easily obtain product information and specifications from product websites. I also debugged database issues that affected customer experience with the Specbooks website. I primarily worked on a PHP backend with the Symfony framework and in a MySQL database, with a frontend using AngularJS 5.</p>
-			<p class="paltry">May 2018 - June 2018</p>
-		</div>
+		<div class="section">
+			<div class="col-md-6">
+				<h1>Experience</h1>
+			</div>
+			<div class="col-md-6">
+				<div>
+					<h3>
+						<a href="https://specbooks.com/">Specbooks</a>
+						<em>Charlotte, NC</em>
+					</h3>
+					<p>While working at Specbooks, I was a part of a small team responsible for updating legacy code for the Specbooks website, including front-end changes and back-end components. While on this team, I was tasked with writing numerous web scrapers to more quickly and easily obtain product information and specifications from product websites. I also debugged database issues that affected customer experience with the Specbooks website. I primarily worked on a PHP backend with the Symfony framework and in a MySQL database, with a frontend using AngularJS 5.</p>
+					<p class="paltry">May 2018 - June 2018</p>
+				</div>
 
-		<div class="info">
-			<h3>
-				<a href="http://www.flexential.com/">Flexential Inc.</a>
-				<em>Charlotte, NC</em>
-			</h3>
-			<p>While working at Flexential, I was part of development team that was responsible for designing and building a consumer-facing web application which allowed customers to manage their services and calculated appropriate monthly charges based on a customer's contract. While on this team, we utilized agile development methodologies, including a scrum board, two week sprints, daily standups, and bi-weekly sprint planning meetings with retrospectives. I was a full-stack developer, with the front-end consisting of AngularJS and SASS and the back-end consisting of a PHP application utilizing the Symfony framework.</p>
-			<p class="paltry">April 2016 - April 2018</p>
+				<div>
+					<h3>
+						<a href="http://www.flexential.com/">Flexential Inc.</a>
+						<em>Charlotte, NC</em>
+					</h3>
+					<p>While working at Flexential, I was part of development team that was responsible for designing and building a consumer-facing web application which allowed customers to manage their services and calculated appropriate monthly charges based on a customer's contract. While on this team, we utilized agile development methodologies, including a scrum board, two week sprints, daily standups, and bi-weekly sprint planning meetings with retrospectives. I was a full-stack developer, with the front-end consisting of AngularJS and SASS and the back-end consisting of a PHP application utilizing the Symfony framework.</p>
+					<p class="paltry">April 2016 - April 2018</p>
+				</div>
+			</div>
 		</div>
-
 	</section>
 
 	<section id="schools">
-		<h2>Schools</h2>
-		
-		<div class="info">
-			<h3>
-				<a href="http://techtalentsouth.com/">Tech Talent South</a>
-				<em>Charlotte, NC</em>
-			</h3>
-			<p>After spending two years working in the restaurant business, the last six months of which I spent trying to simultaneously learn to code through online classes, I quit my job so that I could fully apply myself to my studies. During this time, I discovered Tech Talent South and successfully enrolled in their Code Immersion program. During the full-time program, I focused on building websites via ruby on rails, as well as front-end design in HTML and CSS and API integration.</p>
-			<p class="paltry">October 2015 - December 2015</p>
-		</div>
+		<div class="section-alt">
+			<div class="col-md-6">
+				<h1>Schools</h1>
+			</div>
+			<div class="col-md-6">
+				<div>
+					<h3>
+						<a href="http://techtalentsouth.com/">Tech Talent South</a>
+						<em>Charlotte, NC</em>
+					</h3>
+					<p>After spending two years working in the restaurant business, the last six months of which I spent trying to simultaneously learn to code through online classes, I quit my job so that I could fully apply myself to my studies. During this time, I discovered Tech Talent South and successfully enrolled in their Code Immersion program. During the full-time program, I focused on building websites via ruby on rails, as well as front-end design in HTML and CSS and API integration.</p>
+					<p class="paltry">October 2015 - December 2015</p>
+				</div>
 
-		<div class="info">	
-			<h3>
-				<a href="http://www.appstate.edu/">Appalachian State University</a>
-				<em>Boone, NC</em>
-			</h3>
-			<p>After graduating from High School, I was accepted to attend my college years at Appalachian State University. I spent four years there, during which I earned my bachelor's degree in psychology while acting as an officer in the university's gaming club. After graduating, I decided that I was not interested in pursuing a career in psychology.</p>
-			<p class="paltry">August 2009 - May 2013</p>
+				<div>	
+					<h3>
+						<a href="http://www.appstate.edu/">Appalachian State University</a>
+						<em>Boone, NC</em>
+					</h3>
+					<p>After graduating from High School, I was accepted to attend my college years at Appalachian State University. I spent four years there, during which I earned my bachelor's degree in psychology while acting as an officer in the university's gaming club. After graduating, I decided that I was not interested in pursuing a career in psychology.</p>
+					<p class="paltry">August 2009 - May 2013</p>
+				</div>
+			</div>
 		</div>
-
 	</section>
 
 	<section id="contact">
-		<h2>How to Contact Me</h2>
+		<div class="section">
+			<div class="col-md-6">
+				<h1>Contact Me</h1>
 
-		<div class="contact">
-			<ul>
-				<li>email: allredbm@yahoo.com</li>
-				<li><a href="https://www.linkedin.com/profile/view?id=AAMAABJWLfMBejY4BaaqmEflHZ3_W2Dl68lY5gg&trk=hp-identity-name" target="_blank">Linkedin</a></li>
-				<li>Github: <a href="https://github.com/allredbm">allredbm</a></li>
-			</ul>
+				<ul>
+					<li>email: allredbm@yahoo.com</li>
+					<li><a href="https://www.linkedin.com/profile/view?id=AAMAABJWLfMBejY4BaaqmEflHZ3_W2Dl68lY5gg&trk=hp-identity-name" target="_blank">Linkedin</a></li>
+					<li>Github: <a href="https://github.com/allredbm">allredbm</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				
+			</div>
 		</div>
 	</section>
 
