@@ -1,16 +1,10 @@
-/*Color scheme:
-  #B2B09B (beige)
-  #43AA8B (sea blue)
-  #254441 (darker green)
-  #F6F59 (orange)
-  #DB5O4A (orange red) 
-
-Alternative Color scheme:
-  #E5F4E3 (off-white)
-  #5DA9E9 (sky blue)
-  003F91# (deep blue)
-  #FFFFFF (white)
-  #6D326D (purple);
+/* Color scheme:
+  #0F3C56 (dark blue)
+  #19648F (blue)
+  #33C7FF (Bright blue)
+  #EFEFEF (off-white)
+  #FCFCFC (white)
+  #333333 (Black);
   */
 
 html {
@@ -19,13 +13,14 @@ html {
 }
 
 body {
-	background-color: #5DA9E9;
+	background-color: #0F3C56;
 	font: 16px Georgia, sans-serif;
-	color: #003F91;
+	color: #FCFCFC;
+	padding-top: 80px;
 }
 
 a {
-	color: #5DA9E9;
+	color: #33C7FF;
 }
 
 h1, h2, h3 {
@@ -33,12 +28,12 @@ h1, h2, h3 {
 }
 
 h1 {
-	text-align: center;
+	text-align: left;
 	font-size: 3em;
 }
 
 h2 {
-	text-align: center;
+	text-align: left;
 	font-size: 1.5em;
 }
 
@@ -46,40 +41,10 @@ img {
 	border: 0;
 }
 
-.jumbotron {
-	background-image: url("assets/dark-blue-sky.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	padding: 10%;
-}
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-}
-
-.intro {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #E5F4E3;
-	border-radius: 25px;
-	padding: 25px;
-	width: 550px;
-	margin-top: 20px;
-}
-
-.info {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #6D326D;
-	color: #FFFFFF;
-	border-radius: 25px;
-	padding: 25px;
-	width: 550px;
-	margin-top: 20px;
 }
 
 .contact {
@@ -92,12 +57,47 @@ img {
 	margin-top: 20px;
 }
 
-.intro img {
-	border-radius: 50%;
-	vertical-align: middle;
+.contact-link {
 	padding: 10px;
-	width: 300px;
-	margin: 0 auto;
 }
 
+.dropdown-menu { 
+	min-width: 230px 
+}
 
+ .navbar {
+  min-height: 80px;
+  background-color: #FCFCFC;
+  border-color: #EFEFEF;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+section {
+	padding: 20px 20px;
+}
+
+.section-alt {
+	background-color: #EFEFEF;
+	color: #19648F;
+	padding: 20px 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
