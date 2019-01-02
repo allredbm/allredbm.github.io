@@ -1,13 +1,7 @@
-/*Color scheme:
-  #B2B09B (beige)
-  #43AA8B (sea blue)
-  #254441 (darker green)
-  #F6F59 (orange)
-  #DB5O4A (orange red) 
-
-Alternative Color scheme:
+/* Color scheme:
   #0F3C56 (dark blue)
   #19648F (blue)
+  #33C7FF (Bright blue)
   #EFEFEF (off-white)
   #FCFCFC (white)
   #333333 (Black);
@@ -19,14 +13,14 @@ html {
 }
 
 body {
-	background-color: #FCFCFC;
+	background-color: #0F3C56;
 	font: 16px Georgia, sans-serif;
-	color: #333333;
+	color: #FCFCFC;
 	padding-top: 80px;
 }
 
 a {
-	color: #19648F;
+	color: #33C7FF;
 }
 
 h1, h2, h3 {
@@ -53,26 +47,6 @@ img {
     margin: 0 auto;
 }
 
-/*.intro {
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 25px;
-	padding: 25px;
-	width: 550px;
-	margin-top: 20px;
-}*/
-
-/*.info {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #6D326D;
-	color: #FFFFFF;
-	border-radius: 25px;
-	padding: 25px;
-	width: 550px;
-	margin-top: 20px;
-}*/
-
 .contact {
 	margin-right: auto;
 	margin-left: auto;
@@ -82,14 +56,6 @@ img {
 	width: 550px;
 	margin-top: 20px;
 }
-
-/*.intro img {
-	border-radius: 50%;
-	vertical-align: middle;
-	padding: 10px;
-	width: 300px;
-	margin: 0 auto;
-}*/
 
 .contact-link {
 	padding: 10px;
@@ -117,12 +83,13 @@ img {
   padding: 9px 10px !important;
 }
 
-.section {
+section {
 	padding: 20px 20px;
 }
 
 .section-alt {
-	/*background-color: #0F3C56;*/
+	background-color: #EFEFEF;
+	color: #19648F;
 	padding: 20px 20px;
 }
 
