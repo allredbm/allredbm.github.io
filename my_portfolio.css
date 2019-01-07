@@ -84,13 +84,13 @@ img {
 }
 
 section {
-	padding: 20px;
+	padding: 20px 20px;
 }
 
 .section-alt {
 	background-color: #EFEFEF;
 	color: #19648F;
-	padding: 20px;
+	padding: 20px 20px;
 }
 
 @media (min-width: 768px) {
